@@ -12,12 +12,13 @@ int main(){
 
   vect_intail(cards);
   shuffle_deck(cards, deck);
-while (1){
-  /*Deal(deck, com_hand);
+
+  Deal(deck, hand);
+  Deal(deck, com_hand);
+  while (1){
   Com_Draw(deck, com_hand);
   Com_Sequence(stock, com_hand);
-  Com_Discard(discard, com_hand);*/
-  Deal(deck, hand);
+  Com_Discard(discard, com_hand);
 	for(i; i<hand.size(); i++){
 		cout << hand[i].suit << Output(hand[i].val); << endl;
 	}
