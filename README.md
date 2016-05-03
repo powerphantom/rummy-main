@@ -2,6 +2,7 @@
 
 int main(){
 	int i=0;
+	bool true1, true2;
   vector<setup> hand;
   vector<setup> cards;
   stack<setup> deck;
@@ -11,6 +12,7 @@ int main(){
 
   vect_intail(cards);
   shuffle_deck(cards, deck);
+while (1){
   /*Deal(deck, com_hand);
   Com_Draw(deck, com_hand);
   Com_Sequence(stock, com_hand);
@@ -35,6 +37,15 @@ int main(){
 	for(i=0; i<discard.size(); i++){
 		cout << discard[i].suit << discard[i].val << endl;
 	}
-
+	 true1 = Win(hand);
+	  true2 = Win(com_hand);
+	  if ((true1 == true)||(true2 = true))
+	  	break;
+	}
+	if ((true1 == true)&&(true2 == false))
+		cout << "Player 1 wins!" << endl;
+	if (true2 == true)
+		cout << "Player 2 wins!" << endl;
+	
   return 0;
 }
