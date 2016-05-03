@@ -19,7 +19,7 @@ while (1){
   Com_Discard(discard, com_hand);*/
   Deal(deck, hand);
 	for(i; i<hand.size(); i++){
-		cout << hand[i].suit << hand[i].val << endl;
+		cout << hand[i].suit << Output(hand[i].val); << endl;
 	}
 
   Draw_Card (deck,hand, discard);
@@ -27,15 +27,15 @@ while (1){
   Discard(hand, discard);
 	cout<<"Hand: "<<endl;
 	for(i=0; i<hand.size(); i++){
-		cout << hand[i].suit << hand[i].val << endl;
+		cout << hand[i].suit << Output(hand[i].val); << endl;
 	}
 	cout<<"Stock: "<<endl;
 	for(i=0; i<stock.size(); i++){
-		cout << stock[i].suit << stock[i].val << endl;
+		cout << stock[i].suit << Output(stock[i].val); << endl;
 	}
 	cout<<"Discard: "<<endl;
 	for(i=0; i<discard.size(); i++){
-		cout << discard[i].suit << discard[i].val << endl;
+		cout << discard[i].suit << Output(discard[i].val); << endl;
 	}
 	 true1 = Win(hand);
 	  true2 = Win(com_hand);
